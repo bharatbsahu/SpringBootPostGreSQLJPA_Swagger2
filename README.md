@@ -26,18 +26,21 @@
         </dependency>
 		
 2) "@Tag" Annotation in RestController Main Class
+
 	import io.swagger.v3.oas.annotations.tags.Tag;
 	
 	@RestController
 	@Tag(name = "Employee Details Specification", description = "Employee Details")
 
 3)	Add this Annotanion "@ApiOperation" 
+
 	import io.swagger.annotations.ApiOperation;
 
 	@GetMapping("/employees")
     @ApiOperation(value = "Return All the Employee Details")
 	
 4) Swagger2 URL -> http://localhost:8080/swagger-ui/index.html
+
 	http://localhost:8080/employees
 	
 	Git -> https://github.com/bharatbsahu/SpringBootPostGreSQLJPA_Swagger2
