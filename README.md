@@ -1,5 +1,6 @@
 ------------------------------------- Step To Implement Swagger2 ---------------------------------------
 1) Add this dependency in pom.xml:
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>

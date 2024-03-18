@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.postgre</groupId>
-	<artifactId>SpringBootPostGreSQLJPA</artifactId>
+	<artifactId>SpringBootPostGreSQLJPASwgr2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringBootPostGreSQLJPA_Swagger2</name>
 	<description>SpringBoot with PostGreSQL JPA</description>
