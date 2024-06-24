@@ -11,15 +11,17 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String emailId;
+    private int salary;
 
     public Employee() {
 
     }
 
-    public Employee(String firstName, String lastName, String emailId) {
+    public Employee(String firstName, String lastName, String emailId, int salary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailId = emailId;
+        this.salary = salary;
     }
 
     @Id
@@ -54,11 +56,19 @@ public class Employee {
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
+    
+    @Column(name = "salary", nullable = false)
+    public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
 
-    @Override
-    public String toString() {
-        return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId
-                + "]";
-    }
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId
+				+ ", salary=" + salary + "]";
+	}
 
 }
